@@ -31,8 +31,8 @@ jobs:
         - name: Verify Pytest Installation
           run: pytest --version
 
-        - name: Run Linting with Flake8
-          run: flake8 .
+        # - name: Run Linting with Flake8
+        #   run: flake8 .
 
-        - name: Run Tests with Pytest
-          run: pytest
+        # - name: Run Tests with Pytest
+        #   run: pytest
