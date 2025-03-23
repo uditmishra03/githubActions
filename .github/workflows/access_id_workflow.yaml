@@ -2,9 +2,9 @@ name: Access Id workflow
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    # branches:
+    #   - main
+  # workflow_dispatch:
   
 env:
   ACCESS_ID: "scaler-123"
