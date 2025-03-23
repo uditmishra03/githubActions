@@ -2,6 +2,7 @@ name: Access ID Workflow
 
 on:
   workflow_dispatch:
+  push:
   # push:  # Trigger workflow on every push
 
 jobs:
