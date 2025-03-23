@@ -1,7 +1,8 @@
 name: Access ID Workflow
 
 on:
-  push:  # Triggers on every push to the repository
+  workflow_dispatch:
+  # push:  # Trigger workflow on every push
 
 jobs:
   build:
@@ -9,6 +10,6 @@ jobs:
     
     steps:
       - name: Print GitHub Variable
-        run: echo "The ACCESS_ID is : $ACCESS_ID"
+        run: echo "The ACCESS_ID is $ACCESS_ID"
         env:
           ACCESS_ID: ${{ vars.ACCESS_ID }}
