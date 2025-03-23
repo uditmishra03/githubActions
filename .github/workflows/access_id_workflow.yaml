@@ -6,8 +6,8 @@ on:
     #   - main
   # workflow_dispatch:
   
-env:
-  ACCESS_ID: "scaler-123"
+# env:
+#   ACCESS_ID: "scaler-123"
 
 jobs:
   build:
@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: Print Variable
         run: | 
-            echo "The ACCESS_ID is : $ACCESS_ID"
+            echo "The ACCESS_ID is : ${{ vars.ACCESS_ID }}"
   
