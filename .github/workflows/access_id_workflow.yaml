@@ -9,6 +9,6 @@ jobs:
     
     steps:
       - name: Print GitHub Variable
+        run: echo "The ACCESS_ID is : $ACCESS_ID"
         env:
           ACCESS_ID: ${{ vars.ACCESS_ID }}
-        run: echo "The ACCESS_ID is : $ACCESS_ID"
